@@ -9,7 +9,14 @@ html {
 body {
   width: 100%;
   height: 100vh;
+  
+  /*Using a remote hosted image*/
   background: url('https://i.ibb.co/6Ywm6yp/background.jpg');
+  
+  /*
+  If you want to use a locally stored image on your system
+  background: url('images/background.jpg');
+  */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
