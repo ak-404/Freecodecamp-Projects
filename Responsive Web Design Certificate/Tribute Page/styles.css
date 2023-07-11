@@ -50,8 +50,7 @@ h1, h2, p, .quotee {
   box-shadow: 0 5px 10px 5px #ffffff77;
 }
 #image {
-  width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
 }
