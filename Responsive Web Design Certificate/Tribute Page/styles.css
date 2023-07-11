@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700;800&family=Kalam:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #f8f8ff;
+  font-family: Kalam, cursive;
+}
+body {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  background-color: #000000;
+}
+#main {
+  width: 100%;
+  padding: 2rem 0.5rem;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 2px #ffd700aa, 0 0 10px 7px #f8f8ffaa;
+}
+h1, h2, p, .quotee {
+  font-family: "Inconsolata", monospace;
+}
+#title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  color: #ffd700;
+}
+#description {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+#img-div {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  padding: 0.3rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px 5px #ffffff77;
+}
+#image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+#img-caption {
+  font-size: 1.125rem;
+  margin-top: 0.3rem;
+}
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tribute-info h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  color: #ffa700;
+  font-weight: 700;
+}
+#tribute-info ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 70%;
+  max-width: 720px;
+}
+#tribute-info ul li {
+  justify-content: flex-start;
+  margin: 0.3rem 0;
+  font-size: 1.125rem;
+  text-align: left;
+}
+#tribute-info ul li strong {
+  color: #00ff00;
+}
+#quote {
+  width: 60%;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+#quote q {
+  line-height: 1rem;
+}
+#quote p {
+  margin-top: 1rem;
+}
+.quotee {
+  color: #ffd700;
+  font-weight: 700;
+}
+#footer {
+  width: 70%;
+  font-size: 1rem;
+  margin: 0 auto;
+  color: #00ffff;
+  font-weight: 500;
+}
+#tribute-link {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0.75rem;
+}
+#tribute-link:link, #tribute-link:visited {
+  color: #00ffff;
+}
+#tribute-link:hover {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+#tribute-link:active {
+  color: #fff;
+  text-decoration: none;
+}
