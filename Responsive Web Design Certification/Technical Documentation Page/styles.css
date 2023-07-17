@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dNone {
+  display: none;
+}
+.dBlock {
+  display: block;
+}
+body {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+}
+#navbar {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+}
+#navbar header, #navbar button {
+  margin: 0 1rem;
+}
+#navbar header h1 {
+  font-size: 1.5rem;
+}
+#navbar header span {
+  background-color: #000;
+  color: #ff0;
+}
+#navbar button {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 1.25rem;
+}
+#navbar > .nav-divider {
+  display: none;
+}
+#navbar ul {
+  width: 80%;
+  
+  /* It will get the height of full viewport height - navbar 
+  height (i.e. 4rem) */
+  height: calc(100% - 4rem);
+  
+  position: fixed;
+  
+  /* navbar height is 4rem, so it will sit just below of it */
+  top: 4rem;
+  
+  left: 0;
+  overflow: auto;
+  background-color: #fff;
+  list-style: none;
+  border-right: 2px solid #000;
+}
+#navbar ul li {
+  margin: 1rem;
+}
+.nav-link {
+  font-size: 1.125rem;
+  color: #000;
+  text-decoration: none;
+}
+.nav-link:active {
+  text-decoration: underline;
+}
+#main-doc {
+  width: 100%;
+  
+  /* It will get the height of full viewport height - navbar 
+  height (i.e. 4rem) */
+  height: calc(100% - 4rem);
+  
+  /* horizontal overflow will be hidden */
+  overflow-x: hidden;
+  
+  /* vertically overflowed data can be viewed by scroll */
+  overflow-y: auto;
+  
+  padding-bottom: 0.5rem;
+  
+  /* scrolling behavior will be smooth */
+  scroll-behavior: smooth;
+}
+.main-section {
+  margin: 0 1rem;
+  padding-top: 1rem;
+}
+.main-section header h2 {
+  font-size: 1.25rem;
+}
+.main-section > div {
+  font-size: 1rem;
+  margin: 0.5rem 0 0 0.5rem;
+}
+.main-section > div p {
+  margin-bottom: 0.5rem;
+}
+.main-section > div ul, .code-fragment {
+  margin: 0 0 0.5rem 1rem;
+}
+.main-section > div .nested-list {
+  margin-bottom: 0;
+}
+.code-fragment {
+  padding: 0.5rem;
+  background-color: #111;
+  color: #f8f8ff;
+  overflow: auto;
+}
+#reference-link {
+  color: #000;
+}
+#reference-link:hover {
+  text-decoration: none;
+  color: #333;
+}
+#reference-link:active {
+  text-decoration: none;
+  color: #555;
+}
+
+/* media query for screens greater than or equal to 992px */
+@media (min-width: 700px) {
+  body {
+    flex-direction: row;
+  }
+  #navbar {
+    width: 35%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: none;
+  }
+  #navbar header {
+    width: 100%;
+    margin: 1rem 0 0.5rem;
+  }
+  #navbar header h1 {
+    text-align: center;
+  }
+  #navbar button {
+    display: none;
+  }
+  
+  /* It is used to make a divider between the header and 
+  navigation menu in nav element */
+  #navbar > .nav-divider {
+    /* 
+    yes div element's display is given to block, while it's 
+    block by default, is because i am rendering this div only 
+    on screens with width greater than 991px, so it's display 
+    is given none for mobile and tab devices, but block for PCs
+    */
+    display: block;
+    
+    width: 90%;
+    height: 10px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: repeating-linear-gradient(90deg, #000, #000 3%, #ff0 3%, #ff0 7%, #000 7%, #000 10%);
+    transform: skewX(45deg);
+  }
+  
+  #navbar ul {
+    width: 100%;
+    height: auto;
+    
+    /*
+    so, display block is used for PCs, in mobile or tab 
+    devices the display of this nav is dependend upon a button
+    and by default the display is none in mobile or tab
+    devices
+    */
+    display: block;
+    
+    /* position is given static (normal) for PCs */
+    position: static;
+    
+    border: none;
+    margin: 1rem 0;
+  }
+  #navbar ul li:first-child {
+    margin-top: 0;
+  }
+  #navbar ul li:last-child {
+    margin-bottom: 0;
+  }
+  #divider {
+    margin: 1rem 0;
+    border: 2px solid #000;
+  }
+  #main-doc {
+    width: 65%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .main-section {
+    margin: 1rem 1rem 0;
+    padding-top: 0;
+  }
+  #Introduction {
+    margin-top: 0;
+  }
+  #Reference > div ul {
+    margin-bottom: 0;
+  }
+}
