@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna Flute</title>
+    
+    <!-- Font Awesome icons linked here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- My custom CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    
+  </head>
+  <body>
+    <!-- For styling purpose only -->
+    <div class="gradient"></div>
+    
+    <div class="container">
+      <header id="header">
+        <a id="logo" href="#" data-target="home">
+          <span id="header-title">Krishna Flute</span>
+          
+          <!--
+          if have a local stored image than use
+          <img id="header-img" src="https://svgshare.com/i/wVp.svg" />
+          -->
+          <img id="header-img" src="https://svgshare.com/i/wVp.svg" />
+        </a>
+        <nav id="nav-bar">
+          <button class="toggler-button" id="main-menu-toggler"><i class="fa-solid fa-bars"></i></button>
+          <ul class="menu d-none" id="main-menu">
+            <li><a class="nav-link" href="#home" data-target="home">Home</a></li>
+            <li><a class="nav-link" href="#features" data-target="features">Features</a></li>
+            <li><a class="nav-link" href="#how_it_works" data-target="how_it_works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing" data-target="pricing">Pricing</a></li>
+          </ul>
+          <button class="toggler-button" id="styles-menu-toggler"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <ul class="menu d-none" id="styles-menu">
+            <li><a class="style-link active" id="style1" href="#">
+              <span class="style-link-img"></span>
+              <span class="style-link-text">Style 1</span>
+            </a></li>
+            <li><a class="style-link" id="style2" href="#">
+              <span class="style-link-img"></span>
+              <span class="style-link-text">Style 2</span>
+            </a></li>
+            <li><a class="style-link" id="style3" href="#">
+              <span class="style-link-img"></span>
+              <span class="style-link-text">Style 3</span>
+            </a></li>
+            <li><a class="style-link" id="style4" href="#">
+              <span class="style-link-img"></span>
+              <span class="style-link-text">Style 4</span>
+            </a></li>
+            <li><a class="style-link" id="style5" href="#">
+              <span class="style-link-img"></span>
+              <span class="style-link-text">Style 5</span>
+            </a></li>
+            <li><a class="style-link" id="style6" href="#">
+              <span class="style-link-img"></span>
+              <span class="style-link-text">Style 6</span>
+            </a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero" id="home">
+          <h1>Welcome to Krishna Flute</h1>
+          <p>Harmonizing Tradition and Craftsmanship - Our Indian bamboo flutes embody the soulful melodies of generations, handcrafted with precision and love to create enchanting musical experiences.</p>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" placeholder="e.g. info@example.com" required />
+            <input class="btn" id="submit" type="submit" value="Get Started" />
+          </form>
+        </section>
+        <hr class="divider" />
+        <section id="features">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div class="feature-text">
+              <h2>Exquisite Craftsmanship</h2>
+              <p>Discover the artistry behind our Indian bamboo flutes. Meticulously handcrafted by skilled artisans, each flute exudes beauty, precision, and timeless elegance.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fa-solid fa-headphones-simple"></i>
+            </div>
+            <div class="feature-text">
+              <h2>Soulful Tones</h2>
+              <p>Experience enchanting melodies that stir emotions. Our bamboo flutes produce resonant and soulful tones, carrying the essence of Indian classical music within every breath.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fa-solid fa-maximize"></i>
+            </div>
+            <div class="feature-text">
+              <h2>Versatile & Portable</h2>
+              <p>Perfect for artists on the move. Embrace the convenience of our lightweight and easy-to-carry bamboo flutes, ideal for musicians and performers seeking musical inspiration anytime, anywhere.</p>
+            </div>
+          </div>
+        </section>
+        <hr class="divider" />
+        <section id="how_it_works">
+          <div class="player-wrapper">
+            <iframe id="video" height="450" src="https://youtube.com/embed/qbS_kXiz9NU"allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </div>
+        </section>
+        <hr class="divider" />
+        <section id="pricing">
+          <div class="offer">
+            <h3 class="ins-title">Bansuri</h3>
+            <p class="price">₹499</p>
+            <p class="description">Melodic bamboo flute for Indian classical and folk music</p>
+            <button class="btn purchase-btn">Buy</button>
+          </div>
+          <div class="offer">
+            <h3 class="ins-title">Venu</h3>
+            <p class="price">₹999</p>
+            <p class="description">Traditional Indian flute, linked to Lord Krishna's divine music</p>
+            <button class="btn purchase-btn">Buy</button>
+          </div>
+          <div class="offer">
+            <h3 class="ins-title">Alghoza</h3>
+            <p class="price">₹1499</p>
+            <p class="description">Enchanting double-flute from Rajasthan, producing captivating melodies</p>
+            <button class="btn purchase-btn">Buy</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p>&#169; 2023 <strong>Krishna Flute</strong>. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      let root = document.documentElement;
+      let mainMenu = document.getElementById('main-menu');
+      let stylesMenu = document.getElementById('styles-menu');
+      let mainMenuToggler = document.getElementById('main-menu-toggler');
+      let mainMenuTogglerIcon = document.querySelector('#main-menu-toggler i');
+      let stylesMenuToggler = document.getElementById('styles-menu-toggler');
+      let stylesMenuTogglerIcon = document.querySelector('#styles-menu-toggler i');
+      let mainMenuLinks = mainMenu.querySelectorAll('.nav-link');
+      let stylesMenuLinks = stylesMenu.querySelectorAll('.style-link');
+      let logoLink = document.getElementById('logo');
+      let scrollLinks = [...mainMenuLinks, logoLink]
+      
+      function toggleMainMenu(event) {
+        if(mainMenu.classList.contains('d-none')) {
+          if(stylesMenu.classList.contains('d-flex')) {
+            stylesMenu.classList.remove('d-flex');
+            stylesMenu.classList.add('d-none');
+          }
+          mainMenu.classList.remove('d-none');
+          mainMenu.classList.add('d-flex');
+          mainMenuTogglerIcon.classList.remove('fa-bars');
+          mainMenuTogglerIcon.classList.add('fa-xmark');
+        } else if(mainMenu.classList.contains('d-flex') ) {
+            mainMenu.classList.remove('d-flex');
+            mainMenu.classList.add('d-none');
+            mainMenuTogglerIcon.classList.remove('fa-xmark');
+            mainMenuTogglerIcon.classList.add('fa-bars');
+        }
+      }
+      function toggleStylesMenu() {
+        if(stylesMenu.classList.contains('d-none')) {
+          if(mainMenu.classList.contains('d-flex')) {
+            mainMenu.classList.remove('d-flex');
+            mainMenu.classList.add('d-none');
+            mainMenuTogglerIcon.classList.remove('fa-xmark');
+            mainMenuTogglerIcon.classList.add('fa-bars');
+          }
+          stylesMenu.classList.remove('d-none');
+          stylesMenu.classList.add('d-flex');
+        } else if(stylesMenu.classList.contains('d-flex')) {
+            stylesMenu.classList.remove('d-flex');
+            stylesMenu.classList.add('d-none');
+        }
+      }
+      
+      function applyStyle(selectedStyle) {
+        if(selectedStyle === 'style1') {
+          root.style.setProperty('--gradient-color-1', '#071952');
+          root.style.setProperty('--gradient-color-2', '#0b666a');
+          root.style.setProperty('--primary-color', '#35a29f');
+          root.style.setProperty('--secondary-color', '#35a29f77');
+        } else if(selectedStyle === 'style2') {
+            root.style.setProperty('--gradient-color-1', '#2c3333');
+            root.style.setProperty('--gradient-color-2', '#2e4f4f');
+            root.style.setProperty('--primary-color', '#0e8388');
+            root.style.setProperty('--secondary-color', '#0e838877');
+        } else if(selectedStyle === 'style3') {
+            root.style.setProperty('--gradient-color-1', '#0b2447');
+            root.style.setProperty('--gradient-color-2', '#19376d');
+            root.style.setProperty('--primary-color', '#576cbc');
+            root.style.setProperty('--secondary-color', '#576cbc77');
+        } else if(selectedStyle === 'style4') {
+            root.style.setProperty('--gradient-color-1', '#331d2c');
+            root.style.setProperty('--gradient-color-2', '#3f2e3e');
+            root.style.setProperty('--primary-color', '#a78295');
+            root.style.setProperty('--secondary-color', '#a7829577');
+        } else if(selectedStyle === 'style5') {
+            root.style.setProperty('--gradient-color-1', '#230249');
+            root.style.setProperty('--gradient-color-2', '#570a57');
+            root.style.setProperty('--primary-color', '#a91079');
+            root.style.setProperty('--secondary-color', '#a9107977');
+        } else if(selectedStyle === 'style6') {
+            root.style.setProperty('--gradient-color-1', '#001c30');
+            root.style.setProperty('--gradient-color-2', '#176b87');
+            root.style.setProperty('--primary-color', '#64ccc5');
+            root.style.setProperty('--secondary-color', '#64ccc577');
+        }
+      }
+      
+      mainMenuToggler.addEventListener('click', toggleMainMenu);
+      stylesMenuToggler.addEventListener('click', toggleStylesMenu);
+      
+        mainMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if(window.matchMedia('(max-width: 899px)').matches) {
+              mainMenu.classList.remove('d-flex');
+              mainMenu.classList.add('d-none');
+              mainMenuTogglerIcon.classList.remove('fa-xmark');
+              mainMenuTogglerIcon.classList.add('fa-bars');
+            }
+          });
+        });
+        
+        /* On page load, it will check the local web storage 
+        for selected style and call a function with savedStyle */
+        let savedStyle = sessionStorage.getItem('selectedStyle');
+        let activeLink = sessionStorage.getItem('activeLink');
+        if(savedStyle) {
+          applyStyle(savedStyle);
+        }
+        
+        /* it will add the active class to appropriate element 
+        on page loads, and remove from others */
+        if(activeLink) {
+          let savedActiveLink = document.getElementById(activeLink);
+          stylesMenuLinks.forEach(otherLink => {
+            otherLink.classList.remove('active');
+          })
+          savedActiveLink.classList.add('active');
+        }
+        
+        stylesMenuLinks.forEach(link => {
+          link.addEventListener('click', (event) => {
+            /* it will prevent the default nature of a link
+            (anchor element) i.e. prevent to open a linked web page */
+            event.preventDefault();
+            
+            // It will remove the active class from all the style links
+            stylesMenuLinks.forEach(otherLink => {
+              otherLink.classList.remove('active');
+            });
+            
+            // It will add the active class to selected style link
+            event.currentTarget.classList.add('active');
+            sessionStorage.setItem('activeLink', event.currentTarget.id);
+            
+            stylesMenu.classList.remove('d-flex');
+            stylesMenu.classList.add('d-none');
+            
+            applyStyle(event.currentTarget.id);
+            sessionStorage.setItem('selectedStyle', event.currentTarget.id);
+          });
+        });
+        
+        // Add a click event listener to each scroll link
+        scrollLinks.forEach(link => {
+          link.addEventListener("click", function(event) {
+            event.preventDefault();
+        
+            // Get the target div ID from the data attribute
+            const targetDivId = this.getAttribute("data-target");
+            
+            // Get a reference to the target div element
+            const targetDiv = document.getElementById(targetDivId);
+            
+            // Calculate the position to scroll to (3.5rem from the top)
+            let desiredPosition = targetDiv.offsetTop - 3.7 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+            
+            if(window.matchMedia('(min-width: 900px').matches) {
+              desiredPosition = targetDiv.offsetTop - 3.8 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+            }
+            
+            if(link.getAttribute("data-target") === "home") {
+              desiredPosition = targetDiv.offsetTop - 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+            }
+            
+            // Scroll the page to the desired position
+            window.scrollTo({
+              top: desiredPosition,
+              behavior: "smooth"
+            });
+          });
+        });
+        
+        document.getElementById("form").addEventListener("submit", (event) => {
+          alert("We will contact you soon!");
+          document.getElementById("email").value = "";
+        });
+    </script>
+  </body>
+</html>
