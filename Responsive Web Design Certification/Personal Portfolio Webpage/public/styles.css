@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+:root {
+  --main-color-1: #f6f7f8;
+  --main-color-2: #000;
+  --primary-color-1: #ff3131;
+  --primary-color-2: #39ff14;
+  --primary-color-3: #00839b;
+  --primary-color-3-shade-1: #00adcc;
+  --primary-color-3-shade-2: #00d6fc;
+  --dark-gray-color: #333;
+}
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  color: var(--main-color-1);
+  background-color: var(--main-color-2);
+  overflow-x: hidden;
+  font-family: Sans-Serif;
+}
+a {
+  color: var(--main-color-1);
+}
+a, button {
+  -webkit-tap-highlight-color: transparent !important;
+}
+h1,h2 {
+  animation: slide-from-top 1s ease;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 2px solid var(--primary-color-2);
+  background-color: var(--main-color-2);
+}
+header > span {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  
+  /* because of font used, it is not adjusted in center by default, 
+  so making it appear center using margin-bottom */
+  margin-bottom: 1rem;
+}
+.logo {
+  font-family: 'Concert One', cursive;
+}
+.logo .main-text {
+  display: inline-block;
+  color: var(--main-color-2);
+  -webkit-text-stroke: 2px var(--main-color-1);
+  text-shadow: 2px 2px 20px var(--primary-color-2);
+}
+.toggler-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.toggler-button i {
+  font-size: 1.75rem;
+  color: var(--main-color-1);
+}
+#navbar ul {
+  position: fixed;
+  top: 4rem;
+  right: -100%;
+  z-index: 100;
+  width: 100%;
+  height: calc(100% - 4rem);
+  list-style-type: none;
+  overflow: auto;
+  background-color: var(--main-color-2);
+  text-align: center;
+  transition: all 1s;
+}
+#navbar ul.showNavbar {
+  right: 0;
+}
+#navbar ul li {
+  margin: 1rem;
+}
+#navbar a {
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+#navbar a.active {
+  color: var(--primary-color-2);
+}
+main {
+  width: 100%;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem 0;
+  overflow-x: hidden;
+}
+.showSection {
+  display: flex;
+}
+#welcome-section {
+  flex-direction: row;
+}
+#welcome-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#welcome-info > * {
+  margin-bottom: 1rem;
+}
+#welcome-info h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+#welcome-info h1 .hello {
+  font-style: italic;
+}
+#welcome-info p, #welcome-info .resume-link, #about #about-info {
+  font-size: 1.5rem;
+}
+#welcome-info p {
+  animation: slide-from-left 1s ease;
+}
+#welcome-info div {
+  animation: slide-from-right 1s ease;
+}
+.profile-link {
+  display: inline-block;
+}
+.profile-link i {
+  font-size: 1.5rem;
+}
+.profile-link:nth-child(2) {
+  margin: 0 1.5rem;
+}
+.profile-link:active {
+  color: var(--primary-color-2);
+}
+#welcome-section .resume-link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: var(--main-color-1);
+  background-color: var(--primary-color-3);
+  border-radius: 0.5rem;
+  margin-bottom: 0;
+  animation: slide-from-bottom 1s ease;
+}
+#welcome-section .reusme-link:hover {
+  background-color: var(--primary-color-3-shade-1);
+}
+#welcome-section .resume-link:active {
+  background-color: var(--primary-color-3-shade-2);
+}
+#welcome-img {
+  display: none;
+}
+#about, #projects {
+  padding-top: 6rem;
+}
+#about h2, #projects h2, #contact h2 {
+  font-size: 2rem;
+  font-family: Serif;
+  text-decoration: underline var(--primary-color-3) 5px;
+}
+#about > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+#about #about-info, #about #skills {
+  width: 100%;
+}
+#about #about-info {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.5rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+#about #about-info p {
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+#about #about-info p.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+#about #skills {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.skill {
+  margin: 0 auto 1rem;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.skill > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+progress {
+  width: 100%;
+  position: relative;
+  border: none;
+}
+progress::-webkit-progress-bar {
+  background-color: var(--dark-gray-color);
+  border-radius: 1rem;
+}
+progress::-webkit-progress-value {
+  background-color: var(--primary-color-2);
+  border-radius: 1rem;
+}
+#projects > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-tile {
+  width: 100%;
+  max-width: 360px;
+  height: 410px;
+  margin: 2rem;
+  border: 3px solid var(--primary-color-2);
+  border-radius: 10px 10px 50px 50px;
+  box-shadow: 0 0 20px 1px var(--main-color-1);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.project-tile .project-img {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* it will maintain 16:9 aspect ratio*/
+  z-index: 1;
+  margin: 0 auto;
+}
+.project-tile .project-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.project-tile .project-info {
+  width: auto;
+  margin: 0.5rem 1rem;
+}
+.project-info > * {
+  margin-bottom: 0.5rem;
+}
+.project-info .techstack {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--primary-color-3-shade-1);
+}
+.project-info .title {
+  font-size: 1.5rem;
+}
+.project-info .description, .project-info div a {
+  font-size: 1.25rem;
+}
+.project-info div a {
+  margin-right: 1rem;
+  color: var(--primary-color-3-shade-2);
+}
+#contact > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+#contact > div > * {
+  margin-bottom: 1rem;
+}
+#contact > div p:nth-child(odd) {
+  animation: slide-from-left 1s ease;
+}
+#contact > div p:nth-child(2) {
+  font-size: 1.5rem;
+  animation: slide-from-right 1s ease;
+}
+#contact > div a {
+  color: var(--primary-color-3-shade-2);
+}
+.animate {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+@media (min-width: 900px) {
+  .toggler-button {
+    display: none;
+  }
+  #navbar ul {
+    position: static;
+    background-color: transparent;
+  }
+  #navbar ul li {
+    display: inline-block;
+  }
+  #navbar a {
+    font-size: 1.5rem;
+  }
+  #welcome-section {
+    min-height: 100vh;
+  }
+  #welcome-info {
+    width: 50%;
+  }
+  #welcome-img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    animation: slide-from-right 1s ease;
+  }
+  #welcome-img img {
+    width: 100%;
+    height: 100%;
+  }
+  #about > div {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #about #about-info, #about #skills {
+    width: 40%;
+  }
+}
+
+@keyframes slide-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

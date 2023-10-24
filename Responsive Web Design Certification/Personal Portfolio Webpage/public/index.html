@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atharv - Full Stack Web Developer</title>
+    
+    <!-- Font Awesome icons linked here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- My custom CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      
+      <!-- space before a span is left intentionlly -->
+      <span href="#" class="logo">&#60;<span class="main-text">Atharv</span>&#160;&#47;&#62;</span>
+      
+      <nav id="navbar">
+        <button class="toggler-button"><i class="fa-solid fa-bars"></i></button>
+        <ul>
+          <li><a href="#" class="active" data-section="welcome-section">Home</a></li>
+          <li><a href="#" data-section="about">About</a></li>
+          <li><a href="#" data-section="projects">Projects</a></li>
+          <li><a href="#" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section" class="showSection">
+        <div id="welcome-info">
+          <h1><span class="hello">Hello</span> I'm <span class="logo">&#60;<span class="main-text">Atharv</span>&#160;&#47;&#62;</span></h1>
+          <p>I'm a full stack web developer</p>
+          <div id="profile-links">
+            <a href="https://www.github.com/ak-404" target="_blank" class="profile-link"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/atharv-kumar" target="_blank" class="profile-link"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a class="resume-link" href="./resume/atharv.pdf" download="atharv-resume.pdf">Download Resume</a>
+        </div>
+        <div id="welcome-img">
+          <img src="./images/me.svg" alt="I'm identifying and trying to resolve the bugs" />
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <div>
+          <div id="about-info">
+            <p>Welcome! I'm Atharv, a dynamic Full Stack Web Developer well-versed in the MERN (MongoDB, Express, React, Node.js) stack. With a strong foundation in Redux for state management and a knack for crafting elegant user interfaces, I bring ideas to life with responsive web applications. My toolset includes Tailwind CSS and Bootstrap, enabling me to deliver sleek, user-friendly designs efficiently.</p>
+            <p>From database architecture to the front-end, I ensure a seamless user experience. I'm passionate about creating feature-rich websites, implementing clean code, and optimizing performance. My coding journey extends to open-source contributions and continuous exploration of emerging web technologies.</p>
+            <p>I'm more than a developer; I'm a problem solver, a team player, and a lifelong learner. When I'm not coding, you can find me collaborating on diverse projects and sharing knowledge with the developer community. Let's collaborate to turn your web dreams into reality.</p>
+          </div>
+          <div id="skills">
+            <div class="skill">
+              <div><p>HTML</p><p>99%</p></div>
+              <progress max="100" value="99"></progress>
+            </div>
+            <div class="skill">
+              <div><p>CSS</p><p>99%</p></div>
+              <progress max="100" value="99"></progress>
+            </div>
+            <div class="skill">
+              <div><p>Javascript</p><p>75%</p></div>
+              <progress max="100" value="75"></progress>
+            </div>
+            <div class="skill">
+              <div><p>MERN</p><p>75%</p></div>
+              <progress max="100" value="75"></progress>
+            </div>
+            <div class="skill">
+              <div><p>Redux</p><p>70%</p></div>
+              <progress max="100" value="70"></progress>
+            </div>
+            <div class="skill">
+              <div><p>Tailwind CSS</p><p>85%</p></div>
+              <progress max="100" value="85"></progress>
+            </div>
+            <div class="skill">
+              <div><p>Bootstrap 5</p><p>95%</p></div>
+              <progress max="100" value="95"></progress>
+            </div>
+            <div class="skill">
+              <div><p>Git/Github</p><p>60%</p></div>
+              <progress max="100" value="60"></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div>
+          <div class="project-tile">
+            <div class="project-img">
+              <img src="./images/krishna-flutes.jpg" alt="Krishna Flutes, a product landing page" />
+            </div>
+            <div class="project-info">
+              <p class="techstack">HTML, CSS, Javascript</p>
+              <h3 class="title">Krishna Flutes</h3>
+              <p class="description">A product landing page</p>
+              <div>
+                <a href="https://github.com/ak-404/Freecodecamp-Projects/tree/master/Responsive%20Web%20Design%20Certification/Product%20Landing%20Page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://krishna-flutes0.web.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-img">
+              <img src="./images/javascript-docs.jpg" alt="JS Documentation, a technical Documentation page of Javascript" />
+            </div>
+            <div class="project-info">
+              <p class="techstack">HTML, CSS, Javascript</p>
+              <h3 class="title">JS Documentation</h3>
+              <p class="description">A technical documentation page</p>
+              <div>
+                <a href="https://github.com/ak-404/Freecodecamp-Projects/tree/master/Responsive%20Web%20Design%20Certification/Technical%20Documentation%20Page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://javascript-docs0.web.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-img">
+              <img src="./images/s-ramanujan.jpg" alt="Shrinivas Ramanujan, a tribute page to Shrinivas Ramanujan" />
+            </div>
+            <div class="project-info">
+              <p class="techstack">HTML, CSS, Javascript</p>
+              <h3 class="title">Shrinivas Ramanujan</h3>
+              <p class="description">A tribute page</p>
+              <div>
+                <a href="https://github.com/ak-404/Freecodecamp-Projects/tree/master/Responsive%20Web%20Design%20Certification/Tribute%20Page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://shrinivas-ramanujan0.web.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-tile hotel">
+            <div class="project-img">
+              <img src="./images/hotel-singhara.jpg" alt="Hotel Singhara's feedback form" />
+            </div>
+            <div class="project-info">
+              <p class="techstack">HTML, CSS, Javascript</p>
+              <h3 class="title">Hotel Singhara Feedback Form</h3>
+              <p class="description">A simple feedback form</p>
+              <div>
+                <a href="https://github.com/ak-404/Freecodecamp-Projects/tree/master/Responsive%20Web%20Design%20Certification/Survey%20Form" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://hotel-singhara0.web.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div>
+          <p>Get in touch with me by <a href="mailto:atharvakumar0@gmail.com">email</a></p>
+          <p>OR</p>
+          <p>Connect with me by <a href="https://www.linkedin.com/in/atharv-kumar">linkedin</a></p>
+        </div>
+      </section>
+    </main>
+    <script>
+      const togglerButton = document.querySelector('.toggler-button');
+      const togglerButtonIcon = document.querySelector('.toggler-button i');
+      const navbar = document.querySelector('#navbar ul');
+      const navbarLinks = document.querySelectorAll('#navbar ul li a');
+      const sections = document.querySelectorAll('section');
+      const aboutInfoParagraphs = document.querySelectorAll('#about #about-info p');
+      const aboutSkills = document.querySelectorAll('#about #skills .skill');
+      const projectTiles = document.querySelectorAll('#projects .project-tile');
+     
+      const options = {
+        root: null, // Use the viewport as the root
+        rootMargin: "0px",
+        threshold: 0.5 // Trigger when 50% of the element is in the viewport
+      };
+      const handleIntesection = (entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          } else {
+            entry.target.classList.remove('animate');
+          }
+        });
+      };
+      const observer = new IntersectionObserver(handleIntesection, options);
+      
+      aboutInfoParagraphs.forEach(para => {
+        observer.observe(para);
+      });
+      aboutSkills.forEach(skill => {
+        observer.observe(skill);
+      });
+      projectTiles.forEach(projectTile => {
+        observer.observe(projectTile);
+      });
+      
+      togglerButton.onclick = function() {
+        navbar.classList.toggle('showNavbar');
+        if(navbar.classList.contains('showNavbar')) {
+          togglerButtonIcon.classList.remove('fa-bars');
+          togglerButtonIcon.classList.add('fa-xmark');
+        } else {
+          togglerButtonIcon.classList.remove('fa-xmark');
+          togglerButtonIcon.classList.add('fa-bars');
+        }
+      };
+      
+      navbarLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          navbarLinks.forEach(link => {
+          link.classList.remove('active');
+          });
+          sections.forEach(section => {
+            section.classList.remove('showSection');
+          });
+          document.getElementById(event.target.getAttribute('data-section')).classList.add('showSection');
+          link.classList.add('active');
+          if(window.matchMedia('(max-width: 900px)').matches) {
+            navbar.classList.toggle('showNavbar');
+            togglerButtonIcon.classList.remove('fa-xmark');
+            togglerButtonIcon.classList.add('fa-bars');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
